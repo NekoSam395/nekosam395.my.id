@@ -1,2 +1,2 @@
 # ppp.kellyos
-KellyOS Website Private Preview
+KellyOS Website Preview
