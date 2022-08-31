@@ -9,30 +9,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/images/kelly_derp.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KellyOS</title>
 </head>
 <body>
+            <div class="topnav" id="myTopnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="https://github.com/NekoSam395/KellyOS/releases/latest">Download</a>
+                <a href="https://github.com/NekoSam395/KellyOS/releases/tag/1.2b2">Download (Preview)</a>
+                <a href="https://nekosam395.github.io/ppp.kellyos/Gallery.html">Gallery</a>
+                <a href="#reason">Why GitHub?</a>
+                <a href="#howtoinstall">Install Instruction</a>
+                <a href="#whokelly">Kelly?</a>
+                <a href="#servered">Server Edition</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </div>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+            </script>
+    <br>
         <h1 style="text-align:center;" title="Nyaaaaa~~~!!!">KellyOS</h1>
                 <p style="text-align:center;">A cute mod for Progressbar95</p>
-            <button onclick="document.location='https://github.com/NekoSam395/KellyOS/releases/latest'">Latest stable release</button>
-            <button onclick="document.location='https://github.com/NekoSam395/KellyOS/releases/tag/1.2b2'">Latest preview release</button>
         <hr>
-            <h2>Server version</h2>
+            <h2 id="servered">Server version</h2>
                 <p><a href="https://github.com/NekoSam395/KellyOS/tree/kellyos_server">Not ready yet</a></p>
         <hr>
-            <h2>About this mod</h2>
+            <h2 id="about">About this mod</h2>
                 <p>This project was made by me (NekoSam395) since September 2021, as my most prestigious project that I ever made, for the real Kelly that I loved so much.</p>
         <hr>
-            <h2>Gallery (1.0.2 release)</h2>
-            <p><a href="https://nekosam395.github.io/ppp.kellyos/gallery.html">Here</a></p>
-        <hr>
-            <h2>Hey Sam, why did you put this mod to GitHub?</h2>
+            <h2 id="reason">Hey Sam, why did you put this mod to GitHub?</h2>
             <p><a href="https://nekosam395.github.io/ppp.kellyos/reason.html">Tell me why <del>Ain't nothin' but a heartache</del></a></p>
         <hr>           
-            <h2>How to install this mod?</h2>
+            <h2 id="howtoinstall">How to install this mod?</h2>
             <p><a href="https://nekosam395.github.io/ppp.kellyos/howtoinstall.html">Here</a></p>
         <hr>        
-            <h2>Who ACTUALLY is Kelly?</h2>
+            <h2 id="whokelly">Who ACTUALLY is Kelly?</h2>
                 <a href="https://cdn.discordapp.com/attachments/889898536550940702/999234353169186896/a_b.png" target="_blank" title="The only one cute Kelly-chan">
                 <p><img src="https://cdn.discordapp.com/attachments/889898536550940702/999234353169186896/a_b.png" style="width:320px;height:521px;"></p></a>
                 <blockquote><p>This is Kelly-chan, the very cute mascot of this mod.
