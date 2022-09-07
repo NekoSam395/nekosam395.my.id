@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,41 +25,68 @@
     <meta name="msapplication-TileImage" content="https://nekosam395.github.io/ppp.kellyos/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="styles.css">
-    <title>Why I used GitHub to host my files</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KellyOS</title>
 </head>
 <body>
-  <h1 style="text-align:center;" title="Nyaaaaa~~~!!!">KellyOS | A cute mod for Progressbar95</h1>
+        <h1 style="text-align:center;" title="Nyaaaaa~~~!!!">KellyOS | A cute mod for Progressbar95</h1>
             <div class="topnav" id="myTopnav">
                 <a href="https://nekosam395.github.io/ppp.kellyos">Home</a>
                 <a href="#news">News</a>
-                <a href="https://nekosam395.github.io/ppp.kellyos/Download.html">Download</a>
+                <a class="active">Download</a>
                 <a href="https://nekosam395.github.io/ppp.kellyos/Gallery.html">Gallery</a>
-                <a class="active">Why GitHub?</a>
+                <a href="https://nekosam395.github.io/ppp.kellyos/reason.html">Why GitHub?</a>
                 <a href="https://nekosam395.github.io/ppp.kellyos/howtoinstall.html">Install Instruction</a>
                 <a href="https://nekosam395.github.io/ppp.kellyos#whokelly">Kelly?</a>
                 <a href="#contact">Contact</a>
                 <a href="https://nekosam395.github.io/ppp.kellyos/about.html">About</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i></a>
+                    <script>
+                      function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                          x.className += " responsive";
+                        } else {
+                          x.className = "topnav";
+                        }
+                      }
+                  </script>
             </div>
-            <script>
-                function myFunction() {
-                  var x = document.getElementById("myTopnav");
-                  if (x.className === "topnav") {
-                    x.className += " responsive";
-                  } else {
-                    x.className = "topnav";
-                  }
-                }
-            </script>
-        <br>
-    <h2 style="text-align:center;">Hey Sam, why did you put this mod to GitHub?</h2>
-    <p>Nice question, there&#39;s 3 reason why I repo this mod:</p>
-    <ol>
-    <li>Mods are open-sourced and I think KellyOS&#39;s forks will be great.</li>
-    <li>Most of mods in GitHub is for Minecraft, but no one (except this one) PB95 mods in GitHub so I decided put my mod in this website.</li>
-    <li>I don&#39;t have <a href="https://store.steampowered.com/app/1304550/Progressbar95/">Progressbar95 Steam version</a>. (Note: uhh... I have it, but cracked.... only for this.)</li>
-    </ol>
+<p style="font-size:36px;margin-top:24px;text-align:center;">Choose your version</p>
+        <div id="columns">
+            <div class="columns">
+                <p class="column-title" style="text-align:center">General Release</p>
+                <p style="text-align:center">v1.1.1</p>
+                <img src="images/kelly1.png"
+                width="135px">
+                <br/>
+                <button onclick="document.location='https://github.com/NekoSam395/KellyOS/releases/download/1.1.1/KellyOS_1.1.1.zip'" class="buttons">Direct Download</button>
+                <button onclick="document.location='https://github.com/NekoSam395/KellyOS/releases/latest'" class="buttons">Information</button>
+            </div>
+            <div class="columns">
+                <p class="column-title" style="text-align:center">Beta Release</p>
+                <p style="text-align:center">v1.2 Beta 2</p>
+                <img src="images/betabadge.png" width="135px">
+                <br/>
+                <button onclick="document.location='https://github.com/NekoSam395/KellyOS/releases/download/1.2b2/KellyOS_1.2_Beta2.rar'" class="buttons">Direct Download</button>
+                <button onclick="document.location='https://github.com/NekoSam395/KellyOS/releases/tag/1.2b2'" class="buttons">Information</button>
+            </div>
+            <div class="columns">
+                <p class="column-title" style="text-align:center">Alpha Release</p>
+                <p style="text-align:center">v2.0</p>
+                <img src="images/alphabadge.png" width="135px">
+                <br/>
+                <h1>Coming Soon</h1>
+            </div>
+            <p class="column-title"><img src="images/a_b.png" width="180px" alt="w"><br/>Thank you for downloading!! o(=∩ω∩=)o</p>
+        </div>
+        <br/><br/><br/>
+    </div>
+<footer>
+  <p id="copyright">© 2021-2022 NekoSam395. All Cuteness Reserved under<a href="https://github.com/NekoSam395/KellyOS/blob/kellyos_main/LICENSE"> MIT License.</a></p>
+  <p id="copyright2">Made with 🤎 and 😸 by <a href="https://github.com/NekoSam395"> NekoSam395.</a></p>
+</footer>
 </body>
 </html>
 </end>

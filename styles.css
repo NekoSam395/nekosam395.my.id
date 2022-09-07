@@ -47,11 +47,9 @@ section                   {width:500px;float:right;padding-bottom:50px;}
 small                     {font-size:11px;}
 hr                        {border:0;background:#e5e5e5;height:1px;
                             margin:0 0 20px;}
-footer                    {width:270px;float:left;position:fixed;bottom:50px;
-                            -webkit-font-smoothing:subpixel-antialiased;}
 .topnav                   {background-color:#65432155;border-radius:10px;overflow:hidden;  
                             position:sticky;top:0px;}
-.topnav a                 {float:left;color:#FFFFFF;text-align:center;
+.topnav a                 {transition:0.3s ease;float:left;color:#FFFFFF;text-align:center;
                             padding:14px 16px;text-decoration:none;font-size:12px;}
 .topnav a:hover           {background-color:#654321;color:white;}
 .topnav a.active          {background-color:#654321;color:white;}
@@ -59,6 +57,21 @@ footer                    {width:270px;float:left;position:fixed;bottom:50px;
 .content                  {padding:16px;}
 .sticky                   {position:fixed;top:0;width:100%;}
 .sticky + .content        {padding-top:60px;}
+#copyright                {position:sticky;bottom:0;margin:0;padding-bottom:12px;width:100%;
+                            box-sizing:border-box;text-align:center;font-size:15px;
+                            color:#654321;background-color:transparent;z-index:1;}
+#copyright2               {position:fixed;bottom:0;margin:0;padding-bottom:12px;width:100%;
+                            box-sizing:border-box;text-align:center;font-size:14px;
+                            color:#654321;background-color:transparent;z-index:1;}
+#downloads                {padding:5% 10% 0 10%;box-sizing:border-box;background-color:#202225;
+                            text-align:center;color:#ffffff;font-size:16px;}
+#columns                  {display: flex;width: 100%;flex-direction: row;flex-wrap:wrap;
+                            justify-content:space-evenly;}
+.column-title             {margin-top:48px;font-size:18px;}
+.buttons                  {transition:0.3s ease;display:block;width:150px;height:50px;margin:10px;outline:none;
+                            border:0px solid transparent;border-radius:15px;background-color:#654321;
+                            color:#ffffff;font-size:14px;font-family:"Comfortaa";cursor:pointer;}
+.buttons:hover            {box-shadow:0px 0px 12px #654321;}
 
 @media screen and (max-width: 600px) {
 .topnav a:not(:first-child)     {display:none;}
