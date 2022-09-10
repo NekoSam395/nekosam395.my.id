@@ -53,7 +53,7 @@ hr                        {border:0;background:#987654;height:3px;
 .topnav a                 {transition:0.3s ease;float:left;color:#FFFFFF;text-align:center;
                             padding:14px 16px;text-decoration:none;font-size:12px;}
 .topnav a:hover           {background-color:#654321;color:white;}
-.topnav a.active          {background-color:#654321;color:white;}
+.topnav a.active          {background-color:#654321;color:white;user-select:none;}
 .topnav .icon             {display:none;}
 .content                  {padding:16px;}
 .sticky                   {position:fixed;top:0;width:100%;}
