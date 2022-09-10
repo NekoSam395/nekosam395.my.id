@@ -27,9 +27,28 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KellyOS</title>
+    <style>
+      #main-container       {height:100vh;}
+      #logo-container       {padding-top:calc(5vh - 10px);width: 100%;text-align: center;}
+      #text-logo, #slogan   {display: inline-block;color:transparent;
+                              background:linear-gradient(45deg, #654321, #987654);
+                              -webkit-background-clip:text;cursor:default;}
+      #text-logo            {font-size:60px;line-height:75px;}
+      #slogan-container     {padding-top:1%;padding-left:12%;padding-right:12%;}
+      #slogan               {font-size:22px;line-height:28px;}
+      #download             {background-image:linear-gradient(45deg, #654321, #987654);}
+      #download:hover       {box-shadow:0px 0px 12px #654321;}
+      #discord              {background-image:linear-gradient(-30deg, #654321, #987654);}
+      #discord:hover        {box-shadow:0px 0px 12px #987654;}
+      #github               {background-image:linear-gradient(0deg, #654321, #987654);}
+      #github:hover         {box-shadow:0px 0px 12px #33261a;}
+      #download-container   {height:250px;position:relative;border:0;padding-top:1%;text-align:center;}
+      .centeridk            {margin:0;position:absolute;top:50%;left:50%;
+                              -ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
+    </style>
 </head>
 <body>
-        <h1 style="text-align:center;" title="Nyaaaaa~~~!!!">KellyOS | A cute mod for Progressbar95</h1>
+    <div id="main-container">
             <div class="topnav" id="myTopnav">
                 <a class="active">Home</a>
                 <a href="#news">News</a>
@@ -37,9 +56,9 @@
                 <a href="https://nekosam395.github.io/ppp.kellyos/Gallery.html">Gallery</a>
                 <a href="https://nekosam395.github.io/ppp.kellyos/reason.html">Why GitHub?</a>
                 <a href="https://nekosam395.github.io/ppp.kellyos/howtoinstall.html">Install Instruction</a>
-                <a href="https://nekosam395.github.io/ppp.kellyos#whokelly">Kelly?</a>
                 <a href="#contact">Contact</a>
                 <a href="https://nekosam395.github.io/ppp.kellyos/about.html">About</a>
+                <a href="https://nekosam395.github.io/ppp.kellyos/about#whokelly">Kelly?</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i></a>
                     <script>
@@ -54,19 +73,39 @@
                   </script>
             </div>
         <br>
-            <h2 id="about">About this mod</h2>
-                <p>This project was made by me (NekoSam395) since September 2021, as my most prestigious project that I ever made, for the real Kelly that I loved so much.</p>
-        <hr>              
-            <h2 id="whokelly">Who ACTUALLY is Kelly?</h2>
-                <a href="https://nekosam395.github.io/ppp.kellyos/images/a_b.png" target="_blank" title="The only one cute Kelly-chan">
-                <p><img src="https://nekosam395.github.io/ppp.kellyos/images/a_b.png" style="width:320px;height:521px;"></p></a>
-                <blockquote><p>This is Kelly-chan, the very cute mascot of this mod.
-                </p></blockquote>
+        <div id="logo-container">
+          <div id="text-logo-container">
+              <span id="text-logo">KellyOS</span>
+          </div>
+          <div id="slogan-container">
+              <span id="slogan">A cute mod for Progressbar95</span>
+          </div>
+      </div>
+        <div id="download-container">
+          <div class="centeridk">
+          <button id="download" class="buttons" onclick="download()">YO BROWSAH IS TOO OLD!!!</button>
+          <button id="discord" class="buttons" onclick="discord()">Join our Discord!</button>
+          <button id="github" class="buttons" onclick="github()">Visit our GitHub!</button>
+        </div>
+        </div>
 <hr>
 <footer>
   <p id="copyright">© 2021-2022 NekoSam395. All Cuteness Reserved under<a href="https://github.com/NekoSam395/KellyOS/blob/kellyos_main/LICENSE"> MIT License.</a></p>
   <p id="copyright2">Made with 🤎 and 😸 by <a href="https://github.com/NekoSam395"> NekoSam395.</a></p>
 </footer>
+</div>
+<script>
+  document.getElementById("download").innerHTML = "Download here!";
+  function download(){
+      window.location.href = "https://nekosam395.github.io/ppp.kellyos/download.html";
+  }
+  function discord(){
+      window.open("https://discord.gg/fyQbtD4Trq");
+  }
+  function github(){
+      window.open("https://github.com/NekoSam395/KellyOS");
+  }
+</script>
 </body>
 </html>
 </end>
