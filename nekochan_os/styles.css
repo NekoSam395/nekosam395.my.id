@@ -1,0 +1,115 @@
+body                      {background-color:#bea286;padding:5px 100px 0px;
+                            font:14px/1.5 "Comfortaa";color:#654321;
+                            font-weight:750;}
+h1, h2, h3, h4, h5, h6    {color:#987654;margin:0 0 20px;}
+p, ul, ol, table, pre, dl {margin:0 0 20px;}
+h1, h2, h3                {line-height:1.1;}
+h1                        {font-size:30px;color:#654321;font-weight:1250;}
+h2                        {font-size:20px;color:#866441;font-weight:1000;}
+h3, h4, h5, h6            {color:#987654;font-weight:800;}
+a                         {color:#f0f0f0;text-decoration:none;}
+a:hover                   {color:#ffffff;}
+a small                   {font-size:11px;color:#777;margin-top:-0.3em;
+                            display:block;}
+a:hover small             {color:#777;}
+.wrapper                  {width:860px;margin:0 auto;}
+blockquote                {border-left:3px solid #e5e5e5;margin:0 0 0 164px;
+                            padding:0 0 0 1%;font-style:bold;}
+.blockquote2                {border-left:3px solid #e5e5e5;padding:0 0 0 1%;font-style:bold;font-size:40px;}
+code, pre                 {font-family:comfortaa;color:#000000;}
+pre                       {padding:8px 15px;background: #f8f8f8;
+                            border-radius:5px;border:1px solid #e5e5e5;
+                            overflow-x: auto;}
+table                     {width:100%;border-collapse:collapse;}
+th, td                    {text-align:left;padding:5px 10px;
+                            border-bottom:1px solid #e5e5e5;}
+dt                        {color:#444;font-weight:500;}
+th                        {color:#444;}
+img                       {height:auto;display:block;
+                            margin-left:auto;margin-right:auto;}
+header                    {width:270px;float:left;position:fixed;
+                            -webkit-font-smoothing:subpixel-antialiased;}
+header ul                 {list-style:none;height:40px;padding:0;
+                            background:#f4f4f4;border-radius:5px;
+                            border:1px solid #e0e0e0;width:270px;}
+header li                 {width:89px;float:left;
+                            border-right:1px solid #e0e0e0;height:40px;}
+header li:first-child a   {border-radius:5px 0 0 5px;}
+header li:last-child a    {border-radius:0 5px 5px 0;}
+header ul a               {line-height:1;font-size:11px;color:#999;
+                            display:block;text-align:center;
+                            padding-top:6px;height:34px;}
+header ul a:hover         {color:#999;}
+header ul a:active        {background-color:#f0f0f0;}
+strong                    {color:#654321;font-weight:1500;}
+header ul li + li + li    {border-right:none;width:89px;}
+header ul a strong        {font-size:14px;display:block;color:#222;}
+section                   {width:500px;float:right;padding-bottom:50px;}
+small                     {font-size:11px;}
+hr                        {border:0;background:#987654;height:3px;
+                            margin:0 0 20px;border-radius:10px;border-color:#654321;}
+.topnav                   {background-color:#65432155;border-radius:10px;overflow:hidden;  
+                            position:sticky;top:0px;}
+.topnav a                 {transition:0.3s ease;float:left;color:#FFFFFF;text-align:center;
+                            padding:14px 16px;text-decoration:none;font-size:12px;}
+.topnav a:hover           {background-color:#654321;color:white;}
+.topnav a.active          {background-color:#654321;color:white;user-select:none;}
+.topnav .icon             {display:none;}
+.content                  {padding:16px;}
+.sticky                   {position:fixed;top:0;width:100%;}
+.sticky + .content        {padding-top:60px;}
+#copyright                {position:sticky;bottom:0;margin:0;padding-bottom:10px;width:100%;
+                            box-sizing:border-box;text-align:center;font-size:15px;
+                            color:#654321;background-color:transparent;z-index:1;}
+#copyright2               {bottom:0;margin:0;width:100%;box-sizing:border-box;text-align:center;
+                            font-size:14px;color:#654321;background-color:transparent;z-index:1;}
+#downloads                {padding:5% 10% 0 10%;box-sizing:border-box;background-color:#202225;
+                            text-align:center;color:#ffffff;font-size:16px;}
+#columns                  {display:flex;width:100%;flex-direction:row;flex-wrap:wrap;
+                            justify-content:space-evenly;}
+.column-title             {margin-top:12px;font-size:18px;}
+.buttons                  {transition:0.3s ease;display:block;width:150px;height:50px;
+                            margin:10px;outline:none;border:0px solid transparent;
+                            border-radius:15px;background-color:#654321;color:#ffffff;
+                            font-size:14px;font-family:"Comfortaa";cursor:pointer;}
+.buttons:hover            {box-shadow:0px 0px 12px #654321;}
+
+@media screen and (max-width: 600px) {
+.topnav a:not(:first-child)     {display:none;}
+.topnav a.icon                  {float:right;display:block;}
+blockquote                      {border-left:3px solid #e5e5e5;margin:0 0 0 35px;
+                                    padding:0 0 0 3%; font-style:bold;}
+.topnav.responsive              {position:relative;}
+.topnav.responsive a.icon       {position:absolute;right:0;top:0;}
+.topnav.responsive a            {float:none;display:block;text-align:left;}
+}
+
+@media print, screen and (max-width: 960px) {
+div.wrapper               {width:auto;margin:0;}
+header, section, footer   {float:none;position:static;width:auto;}
+header                    {padding-right:320px;}
+section                   {border:1px solid #e5e5e5;border-width:1px 0;
+                            padding:20px 0;margin:0 0 20px;}
+header a small            {display:inline;}
+header ul                 {position:absolute;right:50px;top:52px;}
+}
+
+@media print, screen and (max-width: 720px) {
+body                      {word-wrap:break-word;}
+header                    {padding:0;}
+header ul, header p.view  {position:static;}
+pre, code                 {word-wrap:normal;}
+}
+
+@media print, screen and (max-width: 480px) {
+body                      {padding:15px;}
+header ul                 {width:99%;}
+header li                 {width:40%;}
+header ul li + li + li    {width:33%;}
+blockquote                {border-left:3px solid #e5e5e5;margin:0 0 0 35px;
+                            padding:0 0 0 3%; font-style:bold;}
+}
+
+@media print {
+body                      {padding:0.4in;font-size:12pt;color:#444;}
+}
