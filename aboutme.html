@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="am_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>NekoSam395!</title>
+  </head>
+  <body>
+    <div class = "about-wrapper">
+      <div class = "about-left">
+        <div class = "about-left-content">
+          <div>
+            <div class = "shadow">
+              <div class = "about-img">
+                <img src = "assets/Neko-kun.png" alt = "about image">
+              </div>
+            </div>
+
+            <h2 style="color: #c0a671;">NekoSam395</h2>
+            <h3>A cute catboi idk</h3>
+          </div>
+
+          <ul class = "icons">
+            <li><i id="discord" class = "fab fa-discord" onclick="discord('NekoSam395#6017')"></i></li>
+            <li><i id="twitter" class = "fab fa-twitter" onclick="twitter()"></i></li>
+            <li><i id="github" class = "fab fa-github" onclick="github()"></i></li>
+            <li><i id="reddit" class = "fab fa-reddit-alien" onclick="reddit()"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class = "about-right">
+        <h1>Nyaa<span>~!</span></h1>
+        <h2>Hello there, <b>NekoSam395</b> here! 😸</h2>
+        <div class = "about-btns">
+          <button type = "button" class = "btn btn-pink">Nyaholder</button>
+        </div>
+
+        <div class = "neko-para">
+            <!--what a degenerate...-->
+          <p>Nyaholder</p>
+          <p>nyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+          <footer>
+            <p id="copyright">© 2023. Made with 🤎 and 😸 by <a href="https://github.com/NekoSam395"> NekoSam395.</a></p>
+        </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("download").innerHTML = "Download here!";
+      function discord(ele){
+        var tempTxt=document.createElement("input");
+                tempTxt.value=ele;
+                document.body.appendChild(tempTxt);
+                tempTxt.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempTxt);
+                alert("Discord tag copied!");
+      }
+      function twitter(){
+          window.open("https://twitter.com/nekosam395");
+      }
+      function github(){
+          window.open("https://github.com/NekoSam395");
+      }
+      function reddit(){
+          window.open("https://reddit.com/u/samcool939_browncat");
+      }
+    </script>
+  </body>
+</html>
+</end>
